@@ -7,6 +7,7 @@
 ### 1.프로젝트 개요 
 
 <img src="./images/main.png">
+
 - 대기업의 정형화된 시스템에 주목하여 요구분석을 먼저 진행하였습니다. 
 - 그 후에 개념적 , 논리적, 물리적 모델링을 진행하였습니다. 
 - 업무를 분담하여 요구분석에 알맞는 쿼리를 작성하였습니다. 
@@ -37,7 +38,7 @@
 
 ## 📃개념적 모델링 
 
-![image-20220725195404691](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725195404691.png)
+<img src="./images/r1.png">
 
 
 
@@ -45,7 +46,7 @@
 
 ## 🌞논리적 모델링
 
-![image-20220725195113199](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725195113199.png)
+<img src="./images/exerd.png">
 
 
 
@@ -93,29 +94,37 @@
 
 ✔️**개인정보수집에 대한 동의여부, 신상정보를** **입력받고** **랜덤한** **인증번호 발행** 
 
-![image-20220725201332714](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725201332714.png)
+<img src="./images/c1.png">
 
-![image-20220725201317715](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725201317715.png)
+**결과**
+
+<img src="./images/c2.png">
 
 
 
 ✔️**회원가입**
 
-![image-20220725201413302](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725201413302.png)
+<img src="./images/.png">
 
 **결과**
 
-![image-20220725201451979](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725201451979.png)
+<img src="./images/.png">
+
+
 
 
 
 **✔️로그인**
 
-![image-20220725201503741](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725201503741.png)
+
+
+<img src="./images/.png">
 
 **결과**
 
-![image-20220725201520559](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725201520559.png)
+<img src="./images/.png">
+
+
 
 
 
