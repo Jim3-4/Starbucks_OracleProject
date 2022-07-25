@@ -1,4 +1,4 @@
-## 오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹
+# 오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹
 
 
 
@@ -104,11 +104,11 @@
 
 ✔️**회원가입**
 
-<img src="./images/.png">
+<img src="./images/c3.png">
 
 **결과**
 
-<img src="./images/.png">
+<img src="./images/c4.png">
 
 
 
@@ -118,11 +118,11 @@
 
 
 
-<img src="./images/.png">
+<img src="./images/c5.png">
 
 **결과**
 
-<img src="./images/.png">
+<img src="./images/c6.png">
 
 
 
@@ -130,28 +130,32 @@
 
 **✔️회원정보수정**
 
-![image-20220725201726731](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725201726731.png)
 
-![image-20220725201841044](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725201841044.png)
+
+<img src="./images/회원정보수정1.png">
+
+<img src="./images/회원정보수정2.png">
+
+<img src="./images/회원정보수정3.png">
+
+**결과**
+
+<img src="./images/회원정보수정결과.png">
 
 
 
 ✔️**카드 분할 결제 시 차감****(****스타벅스 카드 잔액에서 차감****,** **잔액이 부족할 경우 결제 불가****)**
 
-![image-20220725202027027](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725202027027.png)
+<img src="./images/분할결제1.png">
 
-![image-20220725202031047](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725202031047.png)
+<img src="./images/분할결제2.png">
 
-![image-20220725202040973](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725202040973.png)
+<img src="./images/분할결제3.png">
 
-
-
-<img src="C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725202056175.png" alt="image-20220725202056175" style="zoom: 50%;" />
-
-
+<img src="./images/분할결제4.png">
 
 **결과**
-![image-20220725202203978](C:\Users\kimjm\OneDrive\바탕화~1-DESKTOP-FGTFS58-1187675\지민\images\오라클 데이터베이스 프로젝트 - 스타벅스 벤치마킹\image-20220725202203978.png)
+<img src="./images/분할결제결과.png">
 
 
 
