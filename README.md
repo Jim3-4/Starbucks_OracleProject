@@ -45,7 +45,7 @@
 
 
 ## 🌞논리적 모델링
-
+<a href="https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/2%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4_exerd.exerd">
 <img src="./images/exerd.png">
 
  다음과 같이 설계하였습니다. 테이블은  총33개로 구성되어 있습니다.
