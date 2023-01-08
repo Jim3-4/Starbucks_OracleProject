@@ -99,16 +99,9 @@
 <br>
 <a href="https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/1%EC%9D%B8%EC%A6%9D%EC%BD%94%EB%93%9C%EB%B0%9C%ED%96%89_%EC%9D%BC%EC%B9%98%ED%95%98%EB%8A%94%EC%A7%80sql.sql">코드 링크</a> <br>
 
-개인정보 수집에 대한 동의 여부를 텍스트로 입력하고,  신상정보를 입력받으면 
-전역변수에 인증번호가 발생되고, print로 인증번호를 출력합니다. 
-사용자는 대체변수를 입력하는 입력창에  인증번호를 입력하면 
-다음과 같이 일치하는지 확인합니다. 
-
-<img src="./images/c1.png">
-
-**결과**
-
-<img src="./images/c2.png">
+개인정보 수집에 대한 동의 여부를 텍스트로 입력하고, 신상정보를 입력받으면 바인드변수에 인증번호가 발생되고,<br>
+dbms_output.put_line로 인증번호를 출력합니다.<br>
+사용자는 대체변수를 입력하는 입력창에 인증번호를 입력하면 다음과 같이 일치하는지 확인합니다.
 
 
 
