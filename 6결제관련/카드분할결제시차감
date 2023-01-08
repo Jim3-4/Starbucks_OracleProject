@@ -45,7 +45,7 @@ vrow  pay%rowtype;
 begin
 
 
---입력받은 주문번호의 결제방법, 금액, 카드번호를 가져온다. 
+--입력받은 주문번호의 결제방법과 금액을 가져온다. 
         open vcur;
         loop
         fetch vcur into vrow.pay_method, vrow.amount;
