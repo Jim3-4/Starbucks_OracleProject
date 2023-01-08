@@ -122,7 +122,7 @@ authen_check 변수가 있는 이유: 다른 프로시저에서 로그인이 된
 
 **✔️로그인**
 
-[코드링크]()
+[코드링크](github.com/Jim3-4/Starbucks_OracleProject/blob/main/1회원관련/3로그인.sql)
 
 지역변수 plogonCheck를 선언하여 이용합니다. 
 
@@ -134,7 +134,7 @@ if문을 통해  아이디가 존재 하는지 먼저 체크하고
 
 **✔️레벨출력**
 
-[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/4%ED%9A%8C%EC%9B%90%ED%94%84%EB%A1%9C%ED%95%84.sql)
+[코드링크](github.com/Jim3-4/Starbucks_OracleProject/blob/main/1회원관련/5레벨출력.sql)
 
 아이디를 입력받으면 ,
 
@@ -168,7 +168,7 @@ if문을 통해  아이디가 존재 하는지 먼저 체크하고
 
 **✔️회원정보수정**
 
-[코드링크](https://github.com/Jim34/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/7%ED%9A%8C%EC%9B%90%EC%A0%95%EB%B3%B4%EC%88%98%EC%A0%95%20%ED%8C%A8%ED%82%A4%EC%A7%80.sql)
+[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/7%ED%9A%8C%EC%9B%90%EC%A0%95%EB%B3%B4%EC%88%98%EC%A0%95%20%ED%8C%A8%ED%82%A4%EC%A7%80.sql)
 
 회원정보 수정하는 기능입니다.어플에서는 생년월일,  이메일 , 현금영수증 번호만 변경이 가능합니다.
 
@@ -183,6 +183,7 @@ update_info2는  고객정보를 *로 치환하여  출력하는 프로시저 �
 [코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/8%EC%98%81%EC%88%98%EC%A6%9D%EC%B6%9C%EB%A0%A5.sql)
 
 출력에 필요한 칼럼들을 가지고 있는 테이블 8개를 전부 조인해서 필요한 칼럼들을 다 가져왔고 그것들을 동적쿼리랑 커서 사용해서 구현했습니다.
+
 
  <br> <br>
 ✔️**카드 분할 결제 시 차감 (스타벅스 카드 잔액에서 차감, 잔액이 부족할 경우 결제 불가)**
