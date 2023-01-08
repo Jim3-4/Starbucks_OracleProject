@@ -1,5 +1,5 @@
---°³ÀÎÁ¤º¸¼öÁı¿¡ ´ëÇÑ µ¿ÀÇ¿©ºÎ, ½Å»óÁ¤º¸¸¦ ÀÔ·Â¹Ş°í ·£´ıÇÑ ÀÎÁõ¹øÈ£ ¹ßÇà 
---¹ÙÀÎµåº¯¼ö¼±¾ğ 
+--ê°œì¸ì •ë³´ìˆ˜ì§‘ì— ëŒ€í•œ ë™ì˜ì—¬ë¶€, ì‹ ìƒì •ë³´ë¥¼ ì…ë ¥ë°›ê³  ëœë¤í•œ ì¸ì¦ë²ˆí˜¸ ë°œí–‰ 
+--ë°”ì¸ë“œë³€ìˆ˜ì„ ì–¸ 
 var ocode number;
 
 create or replace procedure info (
@@ -12,39 +12,39 @@ create or replace procedure info (
 is
 vcode number;
 begin
-dbms_output.put_line('º»ÀÎÈ®ÀÎÀ» À§ÇØ ÀÎÁõÀ» ÁøÇàÇØ ÁÖ¼¼¿ä.');
-if pok='µ¿ÀÇ'then
-select substr(ltrim( ltrim(dbms_random.value, '0.'),'0'),0,6)
-  into vcode from dual; 
+dbms_output.put_line('ë³¸ì¸í™•ì¸ì„ ìœ„í•´ ì¸ì¦ì„ ì§„í–‰í•´ ì£¼ì„¸ìš”.');
+if pok='ë™ì˜'then
+select substr(ltrim(dbms_random.value, '0.'),0,6)
+into vcode from dual;
     rcode := vcode;
 end if;
 end;
 
---½ÇÇà 
-exec info('µ¿ÀÇ','±èÁö¹Î','980304','010-0000-0000' ,:ocode);
+--ì‹¤í–‰ 
+exec info('ë™ì˜','ê¹€ì§€ë¯¼','980304','010-0000-0000' ,:ocode);
 
---ÀÎÁõÄÚµå Ãâ·Â 
+--ì¸ì¦ì½”ë“œ ì¶œë ¥ 
 print ocode;
 
---ÀÎÁõÄÚµå¶û ÀÏÄ¡ÇÏ´Â Áö È®ÀÎ 
+--ì¸ì¦ì½”ë“œë‘ ì¼ì¹˜í•˜ëŠ” ì§€ í™•ì¸ 
 create or replace procedure auth_check (
-    authen_send number, --¹ŞÀºÀÎÁõ¹øÈ£ 
-    authen_input number--ÀÔ·ÂÇÑÀÎÁõ¹øÈ£  
-    ,authen_check out number --Ã¼Å©
+    authen_send number, --ë°›ì€ì¸ì¦ë²ˆí˜¸ 
+    authen_input number--ì…ë ¥í•œì¸ì¦ë²ˆí˜¸  
+    ,authen_check out number --ì²´í¬
 )
 is
 begin
     if authen_send=authen_input
     then authen_check := 1;
-    dbms_output.put_line('ÀÎÁõ¼º°ø');
+    dbms_output.put_line('ì¸ì¦ì„±ê³µ');
     else 
    authen_check := 0;
-    dbms_output.put_line('ÀÎÁõ½ÇÆĞ');
+    dbms_output.put_line('ì¸ì¦ì‹¤íŒ¨');
     end if;
     commit;
 end;
 
---¹ÙÀÎµåº¯¼ö ¼±¾ğ 
+--ë°”ì¸ë“œë³€ìˆ˜ ì„ ì–¸ 
 var check number;
---½ÇÇà 
+--ì‹¤í–‰ 
 exec auth_check(:ocode,&inputcode,:check);
