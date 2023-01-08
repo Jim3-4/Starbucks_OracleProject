@@ -1,0 +1,67 @@
+create or replace PACKAGE pay_pkg2
+as 
+procedure pay_sudan5(   porderno in pay.order_no%type );
+procedure pay_sudan6(  porderno in pay.order_no%type  );
+
+end  pay_pkg2 ; 
+
+--바디
+create or replace PACKAGE BODY pay_pkg2
+as   procedure pay_sudan5
+(   porderno in pay.order_no%type     
+)
+is
+vcard_balance starbuckscard.card_balance%type;
+vpay_method pay.pay_method%type;
+vamount pay.amount%type;
+vcardno pay.card_no%type;
+
+begin
+--입력받은 주문번호의 결제방법, 금액, 카드번호를 가져온다. 
+    select pay_method, amount, pay.card_no,card_balance
+    into vpay_method,vamount,vcardno,vcard_balance
+    from pay ,STARBUCKSCARD
+    where order_no=porderno and pay.card_no=STARBUCKSCARD.card_no;
+
+    if (vamount <= vcard_balance) then
+       update starbuckscard
+       set card_balance= card_balance-vamount
+       where card_no=vcardno;
+
+     dbms_output.put_line('스타벅스카드에서'||vamount||'원 차감되었습니다.' );
+    else  
+     dbms_output.put_line('카드잔액이 부족합니다' );
+            end if;
+end;
+procedure pay_sudan6
+(   porderno in pay.order_no%type     
+)
+is
+
+cursor vcur is (select pay_method,amount from pay where order_no=porderno and 
+pay_method in ('신용카드','쿠폰', 'ssgpay')
+); 
+vrow  pay%rowtype;
+begin
+
+
+--입력받은 주문번호의 결제방법, 금액, 카드번호를 가져온다. 
+        open vcur;
+        loop
+        fetch vcur into vrow.pay_method, vrow.amount;
+        exit when vcur%NOTFOUND;
+   end loop; --cursor loop 
+   close vcur;  
+    for i in vcur
+    loop
+
+            if vrow.pay_method='신용카드' then
+                dbms_output.put_line('신용카드에서'||vrow.amount||'원 차감되었습니다.' );            
+            elsif vrow.pay_method='SSGPAY' then
+                dbms_output.put_line('SSGPAY에서'||vrow.amount||'원 차감되었습니다.' ); 
+            elsif vrow.pay_method='쿠폰' then
+                dbms_output.put_line('쿠폰에서 '||vrow.amount||'원 차감되었습니다.' );        
+        end if;    
+        end loop;
+end;
+end  pay_pkg2 ; 
