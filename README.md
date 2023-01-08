@@ -122,7 +122,7 @@ authen_check 변수가 있는 이유: 다른 프로시저에서 로그인이 된
 
 **✔️로그인**
 
-[코드링크](github.com/Jim3-4/Starbucks_OracleProject/blob/main/1회원관련/3로그인.sql)
+[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/3%EB%A1%9C%EA%B7%B8%EC%9D%B8.sql)
 
 지역변수 plogonCheck를 선언하여 이용합니다. 
 
@@ -134,7 +134,7 @@ if문을 통해  아이디가 존재 하는지 먼저 체크하고
 
 **✔️레벨출력**
 
-[코드링크](github.com/Jim3-4/Starbucks_OracleProject/blob/main/1회원관련/5레벨출력.sql)
+[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/5%EB%A0%88%EB%B2%A8%EC%B6%9C%EB%A0%A5.sql)
 
 아이디를 입력받으면 ,
 
