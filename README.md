@@ -192,7 +192,7 @@ update_info2는  고객정보를 *로 치환하여  출력하는 프로시저 �
 
 ✔️**카드 분할 결제 시 차감 (스타벅스 카드 잔액에서 차감, 잔액이 부족할 경우 결제 불가)**
 
-[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/6%EA%B2%B0%EC%A0%9C%EA%B4%80%EB%A0%A8/%EC%B9%B4%EB%93%9C%EB%B6%84%ED%95%A0%EA%B2%B0%EC%A0%9C%EC%8B%9C%EC%B0%A8%EA%B0%90)
+[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/6%EA%B2%B0%EC%A0%9C%EA%B4%80%EB%A0%A8/%EC%B9%B4%EB%93%9C%EB%B6%84%ED%95%A0%EA%B2%B0%EC%A0%9C%EC%8B%9C%EC%B0%A8%EA%B0%90) <
 주문번호를 입력하면 해당 결제수단과 해당금액이 출력되고, 포인트와 유사한 스타벅스카드를 사용했을 시에는 사용한 금액만큼 스타벅스카드잔액에서 차감됩니다.
 
 분할 결제가 아닐시에도 가능합니다(일반카드로만 결제시).
