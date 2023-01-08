@@ -93,8 +93,8 @@
 
 **주요코드 살펴보기**
 
-😊코드링크를 클릭하시면 해당 코드 깃허브 링크가 연결됩니다 😊
- <br> <br>
+😊코드링크를 클릭하시면 해당 코드의 깃허브 링크가 연결됩니다 😊
+
 
 
 ✔️**개인정보수집에 대한 동의여부, 신상정보를** **입력받고** **랜덤한** **인증번호 발행** <br>
@@ -124,19 +124,65 @@ authen_check 변수가 있는 이유: 다른 프로시저에서 로그인이 된
 
 [코드링크]()
 
-select문으로 아이디가 존재하는지 체크를 하고 , 아이디와 비밀번호가 일치하면 다음과 같이  로그인에 성공합니다.
+지역변수 plogonCheck를 선언하여 이용합니다. 
+
+if문을 통해  아이디가 존재 하는지 먼저 체크하고
+
+존재한다면 db에 저장된 비밀번호와 파라미터로 받은 비밀번호를 비교합니다.
+
+ <br> <br>
+
+**✔️레벨출력**
+
+[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/4%ED%9A%8C%EC%9B%90%ED%94%84%EB%A1%9C%ED%95%84.sql)
+
+아이디를 입력받으면 ,
+
+주민번호는  7자리만 출력되기때문에  select문을 따로 실행시켜 지역변수 ssn에 넣어줍니다.
+
+나머지는 그대로 출력되기떄문에 select문으로 한번에  받습니다.
+
+ <br> <br>
+
+**✔️회원프로필출력**
+
+[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/4%ED%9A%8C%EC%9B%90%ED%94%84%EB%A1%9C%ED%95%84.sql)
+
+아이디를 입력받으면 ,
+
+주민번호는  7자리만 출력되기때문에  select문을 따로 실행시켜 지역변수 ssn에 넣어줍니다.
+
+나머지는 그대로 출력되기떄문에 select문으로 한번에  받습니다.
+
+ <br> <br>
+
+**✔️회원탈퇴**
+
+[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/6%ED%9A%8C%EC%9B%90%ED%83%88%ED%87%B4.sql)
+
+파라미터로 아이디와 비밀번호를 받습니다.
+
+아이디가 존재한다면, 파라미터로 받은 비밀번호가  db에  저장된 비밀번호와 같은 지 확인합니다.
 
  <br> <br>
 
 **✔️회원정보수정**
 
-[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/7%ED%9A%8C%EC%9B%90%EC%A0%95%EB%B3%B4%EC%88%98%EC%A0%95%20%ED%8C%A8%ED%82%A4%EC%A7%80.sql)
+[코드링크](https://github.com/Jim34/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/7%ED%9A%8C%EC%9B%90%EC%A0%95%EB%B3%B4%EC%88%98%EC%A0%95%20%ED%8C%A8%ED%82%A4%EC%A7%80.sql)
 
 회원정보 수정하는 기능입니다.어플에서는 생년월일,  이메일 , 현금영수증 번호만 변경이 가능합니다.
 
 update_info는 고객정보를 갱신하는 프로시저이고 (null값이라면 기존값으로 대체)
 
 update_info2는  고객정보를 *로 치환하여  출력하는 프로시저 입니다.
+
+ <br> <br>
+
+✔️**영수증출력** 
+
+[코드링크](https://github.com/Jim3-4/Starbucks_OracleProject/blob/main/1%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A0%A8/8%EC%98%81%EC%88%98%EC%A6%9D%EC%B6%9C%EB%A0%A5.sql)
+
+출력에 필요한 칼럼들을 가지고 있는 테이블 8개를 전부 조인해서 필요한 칼럼들을 다 가져왔고 그것들을 동적쿼리랑 커서 사용해서 구현했습니다.
 
  <br> <br>
 ✔️**카드 분할 결제 시 차감 (스타벅스 카드 잔액에서 차감, 잔액이 부족할 경우 결제 불가)**
