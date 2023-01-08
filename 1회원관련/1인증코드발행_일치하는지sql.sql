@@ -17,7 +17,9 @@ if pok='동의'then
 select substr(ltrim(dbms_random.value, '0.'),0,6)
 into vcode from dual;
     rcode := vcode;
+    dbms_output.put_line('인증코드발행 : ' || rcode);
 end if;
+
 end;
 
 --실행 
